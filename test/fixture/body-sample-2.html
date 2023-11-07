@@ -1,0 +1,638 @@
+<div>
+	<div
+	  class="dl-view"
+	  data-design-system="base"
+	>
+	  <nav
+	    class="dl-nav-bar dl-nav-bar-large"
+	    data-design-system="base"
+	  >
+	    <h1
+	      class="dl-text dl-text-title dl-text-bold dl-text-s dl-text-center dl-text-white dl-nav-bar-title dl-nav-bar-title-no-steps"
+	      data-design-system="oxygen"
+	      data-design-system-component="Text"
+	      aria-live="polite"
+	    >
+	      <div class="flex py-4">
+		<div
+		  class="dl-avatar dl-avatar-medium"
+		  data-design-system="oxygen"
+		  data-design-system-component="Avatar"
+		  aria-hidden="true"
+		>
+		  <div class="dl-position-relative"><span class="dl-avatar-image"><img
+			alt=""
+			class="dl-avatar-circle"
+			src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_organization_avatar"
+		      ></span></div>
+		</div>
+		<div
+		  class="ml-4 flex flex-col justify-center text-left overflow-hidden"
+		><span
+		    class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-white !leading-[20px]"
+		    data-design-system="oxygen"
+		    data-design-system-component="Text"
+		  >Make an appointment </span><span
+		    class="dl-text dl-text-title dl-text-bold dl-text-s dl-text-ellipsis dl-text-white dl-full-width !leading-[20px]"
+		    data-design-system="oxygen"
+		    data-design-system-component="Text"
+		  >Arkham Azylum</span></div>
+	      </div>
+	    </h1><button
+	      class="Tappable-inactive dl-nav-button dl-nav-button-left dl-nav-button-medium"
+	      type="button"
+	      data-design-system="base"
+	      style="user-select: none; cursor: pointer;"
+	    ><span class="sr-only">Back</span><svg
+		width="16"
+		height="16"
+		viewBox="0 0 16 16"
+		fill="currentColor"
+		xmlns="http://www.w3.org/2000/svg"
+		aria-hidden="true"
+		focusable="false"
+		class="dl-icon dl-icon-white dl-icon-xsmall"
+		data-icon-name="regular/chevron-left"
+		data-design-system="oxygen"
+		data-design-system-component="Icon"
+	      >
+		<path
+		  d="m9.727 12.871-4.29-4.476c-.116-.141-.187-.282-.187-.422s.047-.258.141-.375L9.68 3.12c.234-.234.586-.234.797-.023.234.21.234.562.023.797L6.61 7.973l3.937 4.125a.56.56 0 0 1-.023.797c-.235.21-.586.21-.797-.024Z"
+		></path>
+	      </svg></button>
+	    <div class="px-[12px] leading-[50px] float-right"><span
+		class="dl-pill inline-flex dl-align-items-center"
+		data-design-system="oxygen"
+		data-design-system-component="Pill"
+	      ><span
+		  class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-xsmall dl-width-fit-content"
+		><span
+		    class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+		    data-design-system="oxygen"
+		    data-design-system-component="Text"
+		  ></span></span></span></div>
+	  </nav>
+	  <div
+	    class="dl-view-container dl-justify-center"
+	    data-design-system="base"
+	  >
+	    <div
+	      class="dl-view dl-max-width-720"
+	      data-design-system="base"
+	    >
+	      <div
+		class="dl-view"
+		data-design-system="base"
+	      >
+		<div class="flex items-center justify-between !mx-16 !mt-24">
+		  <h2
+		    class="dl-text dl-text-title dl-text-bold dl-text-s outline-none"
+		    data-design-system="oxygen"
+		    data-design-system-component="Text"
+		    id="step-title"
+		    tabindex="-1"
+		  >Choose a practitioner</h2>
+		</div>
+		<div
+		  class="dl-scrollable flex flex-col px-16 pb-24"
+		  data-design-system="base"
+		>
+		  <div class="mt-16">
+		    <div>
+		      <div>
+			<div
+			  class="dl-search-bar dl-rounded-borders-s dl-border-blue dl-booking-autocomplete"
+			  role="search"
+			  data-design-system="base"
+			><input
+			    type="search"
+			    autocomplete="off"
+			    autocorrect="off"
+			    autocapitalize="off"
+			    name="practitioner"
+			    placeholder="Search by practitioner last name"
+			    class="dl-search-bar-input dl-search-bar-input-left"
+			    value=""
+			  ></div>
+			<ul class="ps-0 my-0">
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+			      data-design-system="oxygen"
+			      data-design-system-component="Text"
+			    ><span data-test="practitioners-no-preference">First
+				availability</span></div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 1</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 10</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 11</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 12</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 13</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 2</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 3</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 4</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 5</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 6</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 7</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 8</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			  <li
+			    tabindex="0"
+			    role="button"
+			    class="Tappable-inactive practitioners-list-item dl-list-item dl-list-item-medium dl-list-item-tappable dl-list-item-border-all dl-list-item-rounded dl-list-item-hover"
+			    aria-disabled="false"
+			    data-design-system="oxygen"
+			    data-design-system-component="ListItem"
+			    style="user-select: none; cursor: pointer;"
+			  >
+			    <div
+			      class="dl-avatar dl-avatar-small dl-list-item-avatar dl-margin-r-16 dl-align-self-center"
+			      data-design-system="oxygen"
+			      data-design-system-component="Avatar"
+			      aria-hidden="true"
+			    >
+			      <div class="dl-position-relative"><span
+				  class="dl-avatar-image"
+				><img
+				    alt=""
+				    class="dl-avatar-circle"
+				    src="//media.doctolib.com/image/upload/q_auto:eco,f_auto,dpr_2/w_62,h_62,c_fill,g_face/default_doctor_avatar_m"
+				  ></span></div>
+			    </div>
+			    <div class="dl-list-item-content">
+			      <div
+				class="dl-text dl-text-body dl-text-bold dl-text-s dl-list-item-title"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      ><span
+				  class="practitioners-list-item-name notranslate"
+				  role="text"
+				>Dr. Gregory House 9</span></div><span
+				class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130 dl-list-item-description practitioners-list-item-speciality"
+				data-design-system="oxygen"
+				data-design-system-component="Text"
+			      >Dentiste</span>
+			    </div>
+			  </li>
+			</ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="mt-auto"></div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>

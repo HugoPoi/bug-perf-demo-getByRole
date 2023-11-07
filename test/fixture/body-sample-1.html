@@ -1,0 +1,2040 @@
+<div>
+  <div
+    class="dl-flex-column dl-full-height p-16 dl-gray-lighter-bg dl-overflow-auto"
+  >
+    <div
+      class="dl-card dl-card-bg-white dl-card-variant-default"
+      data-design-system="oxygen"
+      data-design-system-component="Card"
+    >
+      <div class="dl-card-content">
+        <div
+          class="m-8 dl-layout-container"
+          data-design-system="base"
+        >
+          <div
+            class="dl-layout-item dl-layout-size-sm-4"
+            data-design-system="base"
+          >
+            <div
+              class="dl-text dl-text-body dl-text-bold dl-text-s pb-4"
+              data-design-system="oxygen"
+              data-design-system-component="Text"
+            >Treatment status</div>
+            <div
+              class="dl-selector"
+              data-design-system="oxygen"
+              data-design-system-component="SelectorBody"
+            ><input
+                id="careplans-management-status-filter"
+                data-design-system="oxygen"
+                aria-expanded="false"
+                role="combobox"
+                aria-autocomplete="none"
+                aria-haspopup="listbox"
+                tabindex="0"
+                aria-invalid="false"
+                class="dl-input dc-input form-control dl-selector-label dl-input-default"
+                readonly=""
+                type="text"
+                data-design-system-component="Input"
+                value="To bill"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                class="dl-icon dl-selector-arrow dl-icon-xsmall"
+                data-icon-name="solid/chevron-down"
+                data-design-system="oxygen"
+                data-design-system-component="Icon"
+              >
+                <path
+                  d="M3.477 5.018c.21 0 .398.07.539.21l3.96 3.961 3.985-3.96a.723.723 0 0 1 1.055 0 .723.723 0 0 1 0 1.054l-4.5 4.5a.723.723 0 0 1-1.055 0l-4.5-4.5a.723.723 0 0 1 0-1.054.725.725 0 0 1 .516-.211Z"
+                ></path>
+              </svg></div>
+          </div>
+          <div
+            class="dl-layout-item dl-layout-size-sm-4"
+            data-design-system="base"
+          >
+            <div
+              class="dl-text dl-text-body dl-text-bold dl-text-s pb-4"
+              data-design-system="oxygen"
+              data-design-system-component="Text"
+            >Session date</div><input
+              id="date-input-native"
+              data-test-id="date-input-native"
+              min="2021-01"
+              max="2023-12"
+              aria-invalid="false"
+              class="dl-input dc-input form-control date-month-input dl-input-default"
+              type="month"
+              data-design-system="oxygen"
+              data-design-system-component="Input"
+              value=""
+            >
+            <div
+              class="dl-selector"
+              data-design-system="oxygen"
+              data-design-system-component="SelectorBody"
+            ><input
+                id="input-9"
+                data-design-system="oxygen"
+                aria-expanded="false"
+                role="combobox"
+                aria-autocomplete="none"
+                aria-haspopup="listbox"
+                tabindex="0"
+                aria-invalid="false"
+                class="dl-input dc-input form-control dl-selector-label dl-input-default"
+                readonly=""
+                type="text"
+                data-design-system-component="Input"
+                value="Last 3 months"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                class="dl-icon dl-selector-arrow dl-icon-xsmall"
+                data-icon-name="solid/chevron-down"
+                data-design-system="oxygen"
+                data-design-system-component="Icon"
+              >
+                <path
+                  d="M3.477 5.018c.21 0 .398.07.539.21l3.96 3.961 3.985-3.96a.723.723 0 0 1 1.055 0 .723.723 0 0 1 0 1.054l-4.5 4.5a.723.723 0 0 1-1.055 0l-4.5-4.5a.723.723 0 0 1 0-1.054.725.725 0 0 1 .516-.211Z"
+                ></path>
+              </svg></div>
+          </div>
+          <div
+            class="dl-layout-item dl-layout-size-sm-4"
+            data-design-system="base"
+          >
+            <div
+              class="dl-text dl-text-body dl-text-bold dl-text-s pb-4"
+              data-design-system="oxygen"
+              data-design-system-component="Text"
+            >Search a patient</div>
+            <div
+              class="dl-full-width"
+              data-design-system="oxygen"
+              data-design-system-component="Input"
+            >
+              <div class="dl-position-relative"><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="dl-icon dl-input-left-icon dl-icon-xsmall"
+                  data-icon-name="regular/magnifying-glass"
+                  data-design-system="oxygen"
+                  data-design-system-component="Icon"
+                >
+                  <path
+                    d="m13.813 13.04-3.141-3.142c.68-.82 1.055-1.875 1.055-3.023C11.727 4.203 9.523 2 6.852 2 4.156 2 2 4.203 2 6.875 2 9.57 4.18 11.75 6.852 11.75c1.125 0 2.18-.375 3.023-1.055l3.14 3.14a.565.565 0 0 0 .422.165.469.469 0 0 0 .376-.164c.234-.211.234-.563 0-.797ZM3.124 6.874a3.746 3.746 0 0 1 3.75-3.75 3.761 3.761 0 0 1 3.75 3.75 3.746 3.746 0 0 1-3.75 3.75 3.731 3.731 0 0 1-3.75-3.75Z"
+                  ></path>
+                </svg><input
+                  aria-label="patient filter input"
+                  placeholder="Looking among 8 patients"
+                  aria-invalid="false"
+                  class="dl-input dc-input form-control dl-input-default dl-input-with-left-icon"
+                  type="text"
+                  id="input-10"
+                  data-design-system="oxygen"
+                  data-design-system-component="Input"
+                  value=""
+                ></div>
+            </div>
+          </div>
+        </div>
+        <table
+          class="dl-table dl-table-size-medium mt-16"
+          data-design-system="oxygen"
+          data-design-system-component="Table"
+        >
+          <thead
+            class="dl-table-head"
+            data-design-system="oxygen"
+            data-design-system-component="TableHead"
+          >
+            <tr
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <th
+                class="dl-table-head-cell dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableHeadCell"
+              ></th>
+              <th
+                class="dl-table-head-cell dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableHeadCell"
+              >Treatments per patients</th>
+              <th
+                class="dl-table-head-cell dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableHeadCell"
+              >Billing information</th>
+              <th
+                class="dl-table-head-cell dl-table-head-cell-sortable dl-table-head-cell-sorted-desc dl-table-cell-text-left"
+                aria-sort="descending"
+                data-design-system="oxygen"
+                data-design-system-component="TableHeadCell"
+              ><button type="button">Sessions to bill<span
+                    class="caret"></span></button></th>
+              <th
+                class="dl-table-head-cell dl-table-head-cell-sortable dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableHeadCell"
+              ><button type="button">Next session<span
+                    class="caret dl-caret-inactive"
+                  ></span></button></th>
+              <th
+                class="dl-table-head-cell dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableHeadCell"
+              >Action</th>
+            </tr>
+          </thead>
+          <tbody
+            class="dl-table-body"
+            data-design-system="oxygen"
+            data-design-system-component="TableBody"
+          >
+            <tr
+              data-test="patient_row_Potter"
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <p class="dl-margin-b-0"><a
+                      class="dl-link"
+                      data-design-system="base"
+                    >POTTER Harry</a></p>
+                </div>
+                <div class="flex dl-align-items-center">
+                  <div
+                    class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-transform-capitalize dl-text-neutral-130"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >Flèche dans le genou</div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Carte Vitale</span></span><button
+                      aria-label="add carte vitale"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Private health insurance</span></span><button
+                      aria-label="add amc"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></span></ul>
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Prescription</span></span><button
+                      aria-label="add prescription"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></span>
+                  <li
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Quotation</span></span><button
+                      aria-label="add quotation"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></li>
+                </ul>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <div class="flex dl-align-items-center">2 sessions to
+                    bill<button
+                      aria-label="open billing info"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-icon-button-small"
+                      role="button"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:r3:"
+                      data-state="closed"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-small"
+                          data-icon-name="regular/square-info"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M11.75 2.75h-7.5c-.844 0-1.5.68-1.5 1.5v7.5c0 .844.656 1.5 1.5 1.5h7.5c.82 0 1.5-.656 1.5-1.5v-7.5c0-.82-.68-1.5-1.5-1.5Zm.375 9c0 .21-.188.375-.375.375h-7.5a.37.37 0 0 1-.375-.375v-7.5c0-.188.164-.375.375-.375h7.5c.188 0 .375.188.375.375v7.5ZM8.937 9.875h-.374V7.812A.57.57 0 0 0 8 7.25h-.75a.555.555 0 0 0-.563.563c0 .328.235.562.563.562h.188v1.5h-.375a.555.555 0 0 0-.563.563c0 .328.234.562.563.562h1.875a.555.555 0 0 0 .562-.563.57.57 0 0 0-.563-.562ZM8 6.5c.398 0 .75-.328.75-.75A.771.771 0 0 0 8 5a.755.755 0 0 0-.75.75c0 .422.328.75.75.75Z"
+                          ></path>
+                        </svg></div>
+                    </button></div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div class="next-session-date">
+                  <div class="calendar-icon"><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      class="dl-icon dl-icon-small"
+                      data-icon-name="regular/calendar-check"
+                      data-design-system="oxygen"
+                      data-design-system-component="Icon"
+                    >
+                      <path
+                        d="M7.813 11.586a.513.513 0 0 1-.774 0l-1.5-1.5c-.234-.211-.234-.563 0-.797a.554.554 0 0 1 .774 0l1.125 1.125 2.226-2.25a.554.554 0 0 1 .774 0c.234.234.234.586 0 .797l-2.626 2.625ZM5.75 2a.57.57 0 0 1 .563.563V3.5h3.375v-.938c0-.304.234-.562.562-.562a.57.57 0 0 1 .563.563V3.5h.937c.82 0 1.5.68 1.5 1.5v7.5c0 .844-.68 1.5-1.5 1.5h-7.5a1.48 1.48 0 0 1-1.5-1.5V5c0-.82.656-1.5 1.5-1.5h.938v-.938c0-.304.234-.562.562-.562Zm6.375 4.5h-8.25v6c0 .21.164.375.375.375h7.5a.385.385 0 0 0 .375-.375v-6Z"
+                      ></path>
+                    </svg></div>
+                  <div><span
+                      class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130"
+                      data-design-system="oxygen"
+                      data-design-system-component="Text"
+                    >18/03/2023</span></div>
+                  <div><span
+                      class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-090"
+                      data-design-system="oxygen"
+                      data-design-system-component="Text"
+                    >10h50</span></div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ><button
+                  type="button"
+                  aria-label="create_bill"
+                >Créer une facture</button></td>
+            </tr>
+            <tr
+              data-test="patient_row_Granger"
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <p class="dl-margin-b-0"><a
+                      class="dl-link"
+                      data-design-system="base"
+                    >GRANGER Hermione</a></p>
+                </div>
+                <div class="flex dl-align-items-center">
+                  <div
+                    class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-transform-capitalize dl-text-neutral-130"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >Cheville gauche</div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Carte Vitale</span></span></span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Private health insurance</span></span></span></ul>
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Prescription 01/02/2023</span></span></span>
+                  <li
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Quotation</span></span><button
+                      aria-label="add quotation"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></li>
+                </ul>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <div class="flex dl-align-items-center">0 sessions to
+                    bill<button
+                      aria-label="open billing info"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-icon-button-small"
+                      role="button"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:r4:"
+                      data-state="closed"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-small"
+                          data-icon-name="regular/square-info"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M11.75 2.75h-7.5c-.844 0-1.5.68-1.5 1.5v7.5c0 .844.656 1.5 1.5 1.5h7.5c.82 0 1.5-.656 1.5-1.5v-7.5c0-.82-.68-1.5-1.5-1.5Zm.375 9c0 .21-.188.375-.375.375h-7.5a.37.37 0 0 1-.375-.375v-7.5c0-.188.164-.375.375-.375h7.5c.188 0 .375.188.375.375v7.5ZM8.937 9.875h-.374V7.812A.57.57 0 0 0 8 7.25h-.75a.555.555 0 0 0-.563.563c0 .328.235.562.563.562h.188v1.5h-.375a.555.555 0 0 0-.563.563c0 .328.234.562.563.562h1.875a.555.555 0 0 0 .562-.563.57.57 0 0 0-.563-.562ZM8 6.5c.398 0 .75-.328.75-.75A.771.771 0 0 0 8 5a.755.755 0 0 0-.75.75c0 .422.328.75.75.75Z"
+                          ></path>
+                        </svg></div>
+                    </button></div>
+                </div><span
+                  class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                  data-test="amount-to-bill"
+                >NaN&nbsp;€</span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div class="no-next-session"><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="dl-icon dl-icon-neutral-090 dl-icon-small"
+                    data-icon-name="regular/calendar-xmark"
+                    data-design-system="oxygen"
+                    data-design-system-component="Icon"
+                  >
+                    <path
+                      d="m8.773 9.688 1.102 1.101c.234.234.234.586 0 .797a.513.513 0 0 1-.773 0L8 10.484l-1.125 1.102a.513.513 0 0 1-.773 0c-.235-.211-.235-.563 0-.797l1.101-1.101-1.101-1.102c-.235-.211-.235-.563 0-.797.21-.21.562-.21.773 0L8 8.914 9.102 7.79c.21-.21.562-.21.773 0 .234.234.234.586 0 .797l-1.102 1.1ZM5.75 2a.57.57 0 0 1 .563.563V3.5h3.375v-.938c0-.304.234-.562.562-.562a.57.57 0 0 1 .563.563V3.5h.937c.82 0 1.5.68 1.5 1.5v7.5c0 .844-.68 1.5-1.5 1.5h-7.5a1.48 1.48 0 0 1-1.5-1.5V5c0-.82.656-1.5 1.5-1.5h.938v-.938c0-.304.234-.562.562-.562Zm6.375 4.5h-8.25v6c0 .21.164.375.375.375h7.5a.385.385 0 0 0 .375-.375v-6Z"
+                    ></path>
+                  </svg><span
+                    class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-090"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >No session planned</span></div><span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      data-walkme="unpaid-btn-list-care-plan"
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-warning-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Send payment reminder</span></span><button
+                      aria-label="payment_reminder_action"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-warning-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/paper-plane"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/paper-plane"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M13.742 2.117a.531.531 0 0 0-.586-.023L2.281 8.28A.522.522 0 0 0 2 8.797c0 .21.14.398.328.492l3.61 1.5v2.648c0 .211.093.399.28.516.095.024.188.047.259.047.093 0 .21-.024.304-.07l2.602-1.688 2.297.984c.07.024.14.047.234.047a.491.491 0 0 0 .258-.093.501.501 0 0 0 .281-.399l1.5-10.125c.07-.21-.023-.422-.21-.539Zm-3.094 2.695L6.267 9.711 3.828 8.68l6.82-3.868ZM7.04 12.406v-1.148l1.078.469-1.078.68Zm4.43-.516-4.125-1.734 5.25-5.836-1.125 7.57Z"
+                          ></path>
+                        </svg></div>
+                    </button></span></span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ><button
+                  type="button"
+                  aria-label="create_bill"
+                >Créer une facture</button></td>
+            </tr>
+            <tr
+              data-test="patient_row_Weasley"
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <p class="dl-margin-b-0"><a
+                      class="dl-link"
+                      data-design-system="base"
+                    >WEASLEY Ron</a></p>
+                </div>
+                <div class="flex dl-align-items-center">
+                  <div
+                    class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-transform-capitalize dl-text-neutral-130"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >Courbatures</div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Carte Vitale</span></span></span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      disabled=""
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-pill-disabled dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Private health insurance</span></span><button
+                      aria-label="add amc"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      disabled=""
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></span></ul>
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Prescription 02/03/2023</span></span><button
+                      aria-label="add prescription"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></span>
+                  <li
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Quotation</span></span><button
+                      aria-label="add quotation"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></li>
+                </ul>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <div class="flex dl-align-items-center">0 sessions to
+                    bill<button
+                      aria-label="open billing info"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-icon-button-small"
+                      role="button"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:r5:"
+                      data-state="closed"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-small"
+                          data-icon-name="regular/square-info"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M11.75 2.75h-7.5c-.844 0-1.5.68-1.5 1.5v7.5c0 .844.656 1.5 1.5 1.5h7.5c.82 0 1.5-.656 1.5-1.5v-7.5c0-.82-.68-1.5-1.5-1.5Zm.375 9c0 .21-.188.375-.375.375h-7.5a.37.37 0 0 1-.375-.375v-7.5c0-.188.164-.375.375-.375h7.5c.188 0 .375.188.375.375v7.5ZM8.937 9.875h-.374V7.812A.57.57 0 0 0 8 7.25h-.75a.555.555 0 0 0-.563.563c0 .328.235.562.563.562h.188v1.5h-.375a.555.555 0 0 0-.563.563c0 .328.234.562.563.562h1.875a.555.555 0 0 0 .562-.563.57.57 0 0 0-.563-.562ZM8 6.5c.398 0 .75-.328.75-.75A.771.771 0 0 0 8 5a.755.755 0 0 0-.75.75c0 .422.328.75.75.75Z"
+                          ></path>
+                        </svg></div>
+                    </button></div>
+                </div><span
+                  class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                  data-test="amount-to-bill"
+                >NaN&nbsp;€</span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div class="no-next-session"><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="dl-icon dl-icon-neutral-090 dl-icon-small"
+                    data-icon-name="regular/calendar-xmark"
+                    data-design-system="oxygen"
+                    data-design-system-component="Icon"
+                  >
+                    <path
+                      d="m8.773 9.688 1.102 1.101c.234.234.234.586 0 .797a.513.513 0 0 1-.773 0L8 10.484l-1.125 1.102a.513.513 0 0 1-.773 0c-.235-.211-.235-.563 0-.797l1.101-1.101-1.101-1.102c-.235-.211-.235-.563 0-.797.21-.21.562-.21.773 0L8 8.914 9.102 7.79c.21-.21.562-.21.773 0 .234.234.234.586 0 .797l-1.102 1.1ZM5.75 2a.57.57 0 0 1 .563.563V3.5h3.375v-.938c0-.304.234-.562.562-.562a.57.57 0 0 1 .563.563V3.5h.937c.82 0 1.5.68 1.5 1.5v7.5c0 .844-.68 1.5-1.5 1.5h-7.5a1.48 1.48 0 0 1-1.5-1.5V5c0-.82.656-1.5 1.5-1.5h.938v-.938c0-.304.234-.562.562-.562Zm6.375 4.5h-8.25v6c0 .21.164.375.375.375h7.5a.385.385 0 0 0 .375-.375v-6Z"
+                    ></path>
+                  </svg><span
+                    class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-090"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >No session planned</span></div><span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      data-walkme="unpaid-btn-list-care-plan"
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-warning-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Send payment reminder</span></span><button
+                      aria-label="payment_reminder_action"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-warning-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/paper-plane"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/paper-plane"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M13.742 2.117a.531.531 0 0 0-.586-.023L2.281 8.28A.522.522 0 0 0 2 8.797c0 .21.14.398.328.492l3.61 1.5v2.648c0 .211.093.399.28.516.095.024.188.047.259.047.093 0 .21-.024.304-.07l2.602-1.688 2.297.984c.07.024.14.047.234.047a.491.491 0 0 0 .258-.093.501.501 0 0 0 .281-.399l1.5-10.125c.07-.21-.023-.422-.21-.539Zm-3.094 2.695L6.267 9.711 3.828 8.68l6.82-3.868ZM7.04 12.406v-1.148l1.078.469-1.078.68Zm4.43-.516-4.125-1.734 5.25-5.836-1.125 7.57Z"
+                          ></path>
+                        </svg></div>
+                    </button></span></span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ><button
+                  type="button"
+                  aria-label="create_bill"
+                >Créer une facture</button></td>
+            </tr>
+            <tr
+              data-test="patient_row_Dumbledore"
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <p class="dl-margin-b-0"><a
+                      class="dl-link"
+                      data-design-system="base"
+                    >DUMBLEDORE Albus</a></p>
+                </div>
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >Sessions out of nomenclature</div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <div class="flex dl-align-items-center">3 sessions to
+                    bill<button
+                      aria-label="open billing info"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-icon-button-small"
+                      role="button"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:r6:"
+                      data-state="closed"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-small"
+                          data-icon-name="regular/square-info"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M11.75 2.75h-7.5c-.844 0-1.5.68-1.5 1.5v7.5c0 .844.656 1.5 1.5 1.5h7.5c.82 0 1.5-.656 1.5-1.5v-7.5c0-.82-.68-1.5-1.5-1.5Zm.375 9c0 .21-.188.375-.375.375h-7.5a.37.37 0 0 1-.375-.375v-7.5c0-.188.164-.375.375-.375h7.5c.188 0 .375.188.375.375v7.5ZM8.937 9.875h-.374V7.812A.57.57 0 0 0 8 7.25h-.75a.555.555 0 0 0-.563.563c0 .328.235.562.563.562h.188v1.5h-.375a.555.555 0 0 0-.563.563c0 .328.234.562.563.562h1.875a.555.555 0 0 0 .562-.563.57.57 0 0 0-.563-.562ZM8 6.5c.398 0 .75-.328.75-.75A.771.771 0 0 0 8 5a.755.755 0 0 0-.75.75c0 .422.328.75.75.75Z"
+                          ></path>
+                        </svg></div>
+                    </button></div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div class="next-session-date">
+                  <div class="calendar-icon"><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      class="dl-icon dl-icon-small"
+                      data-icon-name="regular/calendar-check"
+                      data-design-system="oxygen"
+                      data-design-system-component="Icon"
+                    >
+                      <path
+                        d="M7.813 11.586a.513.513 0 0 1-.774 0l-1.5-1.5c-.234-.211-.234-.563 0-.797a.554.554 0 0 1 .774 0l1.125 1.125 2.226-2.25a.554.554 0 0 1 .774 0c.234.234.234.586 0 .797l-2.626 2.625ZM5.75 2a.57.57 0 0 1 .563.563V3.5h3.375v-.938c0-.304.234-.562.562-.562a.57.57 0 0 1 .563.563V3.5h.937c.82 0 1.5.68 1.5 1.5v7.5c0 .844-.68 1.5-1.5 1.5h-7.5a1.48 1.48 0 0 1-1.5-1.5V5c0-.82.656-1.5 1.5-1.5h.938v-.938c0-.304.234-.562.562-.562Zm6.375 4.5h-8.25v6c0 .21.164.375.375.375h7.5a.385.385 0 0 0 .375-.375v-6Z"
+                      ></path>
+                    </svg></div>
+                  <div><span
+                      class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130"
+                      data-design-system="oxygen"
+                      data-design-system-component="Text"
+                    >01/04/2023</span></div>
+                  <div><span
+                      class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-090"
+                      data-design-system="oxygen"
+                      data-design-system-component="Text"
+                    >18h30</span></div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ><button
+                  type="button"
+                  aria-label="create_bill"
+                >Créer une facture</button></td>
+            </tr>
+            <tr
+              data-test="patient_row_McGonagall"
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <p class="dl-margin-b-0"><a
+                      class="dl-link"
+                      data-design-system="base"
+                    >MCGONAGALL Minerva</a></p>
+                </div>
+                <div class="flex dl-align-items-center">
+                  <div
+                    class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-transform-capitalize dl-text-neutral-130"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >Cheville gauche</div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Carte Vitale</span></span></span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Private health insurance</span></span></span></ul>
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Prescription 01/02/2023</span></span></span>
+                  <li
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Quotation</span></span><button
+                      aria-label="add quotation"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></li>
+                </ul>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <div class="flex dl-align-items-center">0 sessions to
+                    bill<button
+                      aria-label="open billing info"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-icon-button-small"
+                      role="button"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:r7:"
+                      data-state="closed"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-small"
+                          data-icon-name="regular/square-info"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M11.75 2.75h-7.5c-.844 0-1.5.68-1.5 1.5v7.5c0 .844.656 1.5 1.5 1.5h7.5c.82 0 1.5-.656 1.5-1.5v-7.5c0-.82-.68-1.5-1.5-1.5Zm.375 9c0 .21-.188.375-.375.375h-7.5a.37.37 0 0 1-.375-.375v-7.5c0-.188.164-.375.375-.375h7.5c.188 0 .375.188.375.375v7.5ZM8.937 9.875h-.374V7.812A.57.57 0 0 0 8 7.25h-.75a.555.555 0 0 0-.563.563c0 .328.235.562.563.562h.188v1.5h-.375a.555.555 0 0 0-.563.563c0 .328.234.562.563.562h1.875a.555.555 0 0 0 .562-.563.57.57 0 0 0-.563-.562ZM8 6.5c.398 0 .75-.328.75-.75A.771.771 0 0 0 8 5a.755.755 0 0 0-.75.75c0 .422.328.75.75.75Z"
+                          ></path>
+                        </svg></div>
+                    </button></div>
+                </div><span
+                  class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                  data-test="amount-to-bill"
+                >NaN&nbsp;€</span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div class="no-next-session"><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="dl-icon dl-icon-neutral-090 dl-icon-small"
+                    data-icon-name="regular/calendar-xmark"
+                    data-design-system="oxygen"
+                    data-design-system-component="Icon"
+                  >
+                    <path
+                      d="m8.773 9.688 1.102 1.101c.234.234.234.586 0 .797a.513.513 0 0 1-.773 0L8 10.484l-1.125 1.102a.513.513 0 0 1-.773 0c-.235-.211-.235-.563 0-.797l1.101-1.101-1.101-1.102c-.235-.211-.235-.563 0-.797.21-.21.562-.21.773 0L8 8.914 9.102 7.79c.21-.21.562-.21.773 0 .234.234.234.586 0 .797l-1.102 1.1ZM5.75 2a.57.57 0 0 1 .563.563V3.5h3.375v-.938c0-.304.234-.562.562-.562a.57.57 0 0 1 .563.563V3.5h.937c.82 0 1.5.68 1.5 1.5v7.5c0 .844-.68 1.5-1.5 1.5h-7.5a1.48 1.48 0 0 1-1.5-1.5V5c0-.82.656-1.5 1.5-1.5h.938v-.938c0-.304.234-.562.562-.562Zm6.375 4.5h-8.25v6c0 .21.164.375.375.375h7.5a.385.385 0 0 0 .375-.375v-6Z"
+                    ></path>
+                  </svg><span
+                    class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-090"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >No session planned</span></div><span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      data-walkme="unpaid-btn-list-care-plan"
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-warning-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Send payment reminder</span></span><button
+                      aria-label="payment_reminder_action"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-warning-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/paper-plane"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/paper-plane"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M13.742 2.117a.531.531 0 0 0-.586-.023L2.281 8.28A.522.522 0 0 0 2 8.797c0 .21.14.398.328.492l3.61 1.5v2.648c0 .211.093.399.28.516.095.024.188.047.259.047.093 0 .21-.024.304-.07l2.602-1.688 2.297.984c.07.024.14.047.234.047a.491.491 0 0 0 .258-.093.501.501 0 0 0 .281-.399l1.5-10.125c.07-.21-.023-.422-.21-.539Zm-3.094 2.695L6.267 9.711 3.828 8.68l6.82-3.868ZM7.04 12.406v-1.148l1.078.469-1.078.68Zm4.43-.516-4.125-1.734 5.25-5.836-1.125 7.57Z"
+                          ></path>
+                        </svg></div>
+                    </button></span></span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ><button
+                  type="button"
+                  aria-label="create_bill"
+                >Créer une facture</button></td>
+            </tr>
+            <tr
+              data-test="patient_row_Snape"
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <p class="dl-margin-b-0"><a
+                      class="dl-link"
+                      data-design-system="base"
+                    >SNAPE Severus</a></p>
+                </div>
+                <div class="flex dl-align-items-center">
+                  <div
+                    class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-transform-capitalize dl-text-neutral-130"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >Courbatures</div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-neutral-020 dl-pill-small dl-width-fit-content"
+                    ><svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-test="check"
+                        data-test-id="check"
+                        class="dl-icon dl-margin-r-4 dl-icon-xxsmall"
+                        data-icon-name="regular/check"
+                        data-design-system="oxygen"
+                        data-design-system-component="Icon"
+                      >
+                        <path
+                          d="M13.063 4.414c.234.234.234.586 0 .797l-6.188 6.187a.513.513 0 0 1-.773 0L2.914 8.211c-.234-.211-.234-.563 0-.797a.553.553 0 0 1 .773 0L6.5 10.227l5.79-5.813c.21-.21.562-.21.773 0Z"
+                        ></path>
+                      </svg><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Carte Vitale</span></span></span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      disabled=""
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-pill-disabled dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Private health insurance</span></span><button
+                      aria-label="add amc"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      disabled=""
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></span></ul>
+                <ul class="dl-pill-list flex items-center flex-wrap"><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Prescription 02/03/2023</span></span><button
+                      aria-label="add prescription"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></span>
+                  <li
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-primary-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Quotation</span></span><button
+                      aria-label="add quotation"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-primary-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/plus"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/plus"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M12.875 8a.555.555 0 0 1-.563.563h-3.75v3.75a.576.576 0 0 1-.562.585c-.328 0-.563-.257-.563-.585v-3.75h-3.75c-.328 0-.562-.235-.562-.54 0-.328.234-.585.563-.585h3.75v-3.75c0-.305.234-.54.562-.54a.55.55 0 0 1 .563.54v3.75h3.75a.57.57 0 0 1 .562.562Z"
+                          ></path>
+                        </svg></div>
+                    </button></li>
+                </ul>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <div class="flex dl-align-items-center">0 sessions to
+                    bill<button
+                      aria-label="open billing info"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-icon-button-small"
+                      role="button"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:r8:"
+                      data-state="closed"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-small"
+                          data-icon-name="regular/square-info"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M11.75 2.75h-7.5c-.844 0-1.5.68-1.5 1.5v7.5c0 .844.656 1.5 1.5 1.5h7.5c.82 0 1.5-.656 1.5-1.5v-7.5c0-.82-.68-1.5-1.5-1.5Zm.375 9c0 .21-.188.375-.375.375h-7.5a.37.37 0 0 1-.375-.375v-7.5c0-.188.164-.375.375-.375h7.5c.188 0 .375.188.375.375v7.5ZM8.937 9.875h-.374V7.812A.57.57 0 0 0 8 7.25h-.75a.555.555 0 0 0-.563.563c0 .328.235.562.563.562h.188v1.5h-.375a.555.555 0 0 0-.563.563c0 .328.234.562.563.562h1.875a.555.555 0 0 0 .562-.563.57.57 0 0 0-.563-.562ZM8 6.5c.398 0 .75-.328.75-.75A.771.771 0 0 0 8 5a.755.755 0 0 0-.75.75c0 .422.328.75.75.75Z"
+                          ></path>
+                        </svg></div>
+                    </button></div>
+                </div><span
+                  class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                  data-test="amount-to-bill"
+                >NaN&nbsp;€</span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div class="no-next-session"><svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="dl-icon dl-icon-neutral-090 dl-icon-small"
+                    data-icon-name="regular/calendar-xmark"
+                    data-design-system="oxygen"
+                    data-design-system-component="Icon"
+                  >
+                    <path
+                      d="m8.773 9.688 1.102 1.101c.234.234.234.586 0 .797a.513.513 0 0 1-.773 0L8 10.484l-1.125 1.102a.513.513 0 0 1-.773 0c-.235-.211-.235-.563 0-.797l1.101-1.101-1.101-1.102c-.235-.211-.235-.563 0-.797.21-.21.562-.21.773 0L8 8.914 9.102 7.79c.21-.21.562-.21.773 0 .234.234.234.586 0 .797l-1.102 1.1ZM5.75 2a.57.57 0 0 1 .563.563V3.5h3.375v-.938c0-.304.234-.562.562-.562a.57.57 0 0 1 .563.563V3.5h.937c.82 0 1.5.68 1.5 1.5v7.5c0 .844-.68 1.5-1.5 1.5h-7.5a1.48 1.48 0 0 1-1.5-1.5V5c0-.82.656-1.5 1.5-1.5h.938v-.938c0-.304.234-.562.562-.562Zm6.375 4.5h-8.25v6c0 .21.164.375.375.375h7.5a.385.385 0 0 0 .375-.375v-6Z"
+                    ></path>
+                  </svg><span
+                    class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-090"
+                    data-design-system="oxygen"
+                    data-design-system-component="Text"
+                  >No session planned</span></div><span><span
+                    class="dl-pill inline-flex dl-align-items-center"
+                    data-design-system="oxygen"
+                    data-design-system-component="Pill"
+                  ><span
+                      data-walkme="unpaid-btn-list-care-plan"
+                      class="inline-flex dl-align-items-center h-fit dl-rounded-borders-lg dl-pill-warning-020 dl-pill-small dl-pill-interactive dl-pill-right-icon dl-width-fit-content"
+                    ><span
+                        class="dl-text dl-text-body dl-text-regular dl-text-xs dl-text-center dl-min-width"
+                        data-design-system="oxygen"
+                        data-design-system-component="Text"
+                      >Send payment reminder</span></span><button
+                      aria-label="payment_reminder_action"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-pill-right-icon-button dl-pill-warning-020 dl-icon-button-xxsmall"
+                      role="button"
+                      type="button"
+                      data-test="regular/paper-plane"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-xxsmall"
+                          data-icon-name="regular/paper-plane"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M13.742 2.117a.531.531 0 0 0-.586-.023L2.281 8.28A.522.522 0 0 0 2 8.797c0 .21.14.398.328.492l3.61 1.5v2.648c0 .211.093.399.28.516.095.024.188.047.259.047.093 0 .21-.024.304-.07l2.602-1.688 2.297.984c.07.024.14.047.234.047a.491.491 0 0 0 .258-.093.501.501 0 0 0 .281-.399l1.5-10.125c.07-.21-.023-.422-.21-.539Zm-3.094 2.695L6.267 9.711 3.828 8.68l6.82-3.868ZM7.04 12.406v-1.148l1.078.469-1.078.68Zm4.43-.516-4.125-1.734 5.25-5.836-1.125 7.57Z"
+                          ></path>
+                        </svg></div>
+                    </button></span></span>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ><button
+                  type="button"
+                  aria-label="create_bill"
+                >Créer une facture</button></td>
+            </tr>
+            <tr
+              data-test="patient_row_Longbottom"
+              class="dl-table-row dl-table-unselected-row-bg"
+              data-design-system="oxygen"
+              data-design-system-component="TableRow"
+            >
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <p class="dl-margin-b-0"><a
+                      class="dl-link"
+                      data-design-system="base"
+                    >LONGBOTTOM Neville</a></p>
+                </div>
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >Sessions out of nomenclature</div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ></td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div
+                  class="dl-text dl-text-body dl-text-bold dl-text-s dl-text-neutral-130"
+                  data-design-system="oxygen"
+                  data-design-system-component="Text"
+                >
+                  <div class="flex dl-align-items-center">3 sessions to
+                    bill<button
+                      aria-label="open billing info"
+                      tabindex="0"
+                      class="Tappable-inactive dl-icon-button dl-icon-button-small"
+                      role="button"
+                      type="button"
+                      aria-haspopup="dialog"
+                      aria-expanded="false"
+                      aria-controls="radix-:r9:"
+                      data-state="closed"
+                      data-design-system="oxygen"
+                      data-design-system-component="IconButton"
+                      style="user-select: none; cursor: pointer;"
+                    >
+                      <div class="dl-icon-wrapper dl-position-relative"><svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
+                          focusable="false"
+                          class="dl-icon dl-icon-small"
+                          data-icon-name="regular/square-info"
+                          data-design-system="oxygen"
+                          data-design-system-component="Icon"
+                        >
+                          <path
+                            d="M11.75 2.75h-7.5c-.844 0-1.5.68-1.5 1.5v7.5c0 .844.656 1.5 1.5 1.5h7.5c.82 0 1.5-.656 1.5-1.5v-7.5c0-.82-.68-1.5-1.5-1.5Zm.375 9c0 .21-.188.375-.375.375h-7.5a.37.37 0 0 1-.375-.375v-7.5c0-.188.164-.375.375-.375h7.5c.188 0 .375.188.375.375v7.5ZM8.937 9.875h-.374V7.812A.57.57 0 0 0 8 7.25h-.75a.555.555 0 0 0-.563.563c0 .328.235.562.563.562h.188v1.5h-.375a.555.555 0 0 0-.563.563c0 .328.234.562.563.562h1.875a.555.555 0 0 0 .562-.563.57.57 0 0 0-.563-.562ZM8 6.5c.398 0 .75-.328.75-.75A.771.771 0 0 0 8 5a.755.755 0 0 0-.75.75c0 .422.328.75.75.75Z"
+                          ></path>
+                        </svg></div>
+                    </button></div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              >
+                <div class="next-session-date">
+                  <div class="calendar-icon"><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      class="dl-icon dl-icon-small"
+                      data-icon-name="regular/calendar-check"
+                      data-design-system="oxygen"
+                      data-design-system-component="Icon"
+                    >
+                      <path
+                        d="M7.813 11.586a.513.513 0 0 1-.774 0l-1.5-1.5c-.234-.211-.234-.563 0-.797a.554.554 0 0 1 .774 0l1.125 1.125 2.226-2.25a.554.554 0 0 1 .774 0c.234.234.234.586 0 .797l-2.626 2.625ZM5.75 2a.57.57 0 0 1 .563.563V3.5h3.375v-.938c0-.304.234-.562.562-.562a.57.57 0 0 1 .563.563V3.5h.937c.82 0 1.5.68 1.5 1.5v7.5c0 .844-.68 1.5-1.5 1.5h-7.5a1.48 1.48 0 0 1-1.5-1.5V5c0-.82.656-1.5 1.5-1.5h.938v-.938c0-.304.234-.562.562-.562Zm6.375 4.5h-8.25v6c0 .21.164.375.375.375h7.5a.385.385 0 0 0 .375-.375v-6Z"
+                      ></path>
+                    </svg></div>
+                  <div><span
+                      class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-130"
+                      data-design-system="oxygen"
+                      data-design-system-component="Text"
+                    >01/04/2023</span></div>
+                  <div><span
+                      class="dl-text dl-text-body dl-text-regular dl-text-s dl-text-neutral-090"
+                      data-design-system="oxygen"
+                      data-design-system-component="Text"
+                    >18h30</span></div>
+                </div>
+              </td>
+              <td
+                class="dl-table-cell dl-text-body dl-text-s dl-text-regular dl-table-cell-text-left"
+                data-design-system="oxygen"
+                data-design-system-component="TableCell"
+              ><button
+                  type="button"
+                  aria-label="create_bill"
+                >Créer une facture</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <nav
+      class="dl-pagination dl-padding-x-16 dl-margin-t-16 dl-margin-b-8"
+      data-design-system="oxygen"
+      data-design-system-component="Pagination"
+    >
+      <div class="dl-pagination-infos">1-7 of 8</div>
+      <ul class="dl-pagination-buttons">
+        <li><button
+            class="Tappable-inactive dl-button-primary dl-pagination-button disabled dl-button dl-button-size-medium"
+            type="button"
+            aria-label="Previous page"
+            data-design-system="oxygen"
+            data-design-system-component="Button"
+            style="user-select: none; cursor: pointer;"
+            disabled=""
+          ><span class="dl-button-label"><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                class="dl-icon dl-icon-xsmall"
+                data-icon-name="regular/chevron-left"
+                data-design-system="oxygen"
+                data-design-system-component="Icon"
+              >
+                <path
+                  d="m9.727 12.871-4.29-4.476c-.116-.141-.187-.282-.187-.422s.047-.258.141-.375L9.68 3.12c.234-.234.586-.234.797-.023.234.21.234.562.023.797L6.61 7.973l3.937 4.125a.56.56 0 0 1-.023.797c-.235.21-.586.21-.797-.024Z"
+                ></path>
+              </svg></span></button></li>
+        <li><button
+            class="Tappable-inactive dl-button-primary dl-pagination-button active dl-pagination-button-page-number dl-button dl-button-size-medium"
+            type="button"
+            aria-current="true"
+            data-design-system="oxygen"
+            data-design-system-component="Button"
+            style="user-select: none; cursor: pointer;"
+          ><span class="dl-button-label">1</span></button></li>
+        <li><button
+            class="Tappable-inactive dl-button-primary dl-pagination-button dl-pagination-button-page-number dl-button dl-button-size-medium"
+            type="button"
+            aria-current="false"
+            data-design-system="oxygen"
+            data-design-system-component="Button"
+            style="user-select: none; cursor: pointer;"
+          ><span class="dl-button-label">2</span></button></li>
+        <li><button
+            class="Tappable-inactive dl-button-primary dl-pagination-button dl-button dl-button-size-medium"
+            type="button"
+            aria-label="Next page"
+            data-design-system="oxygen"
+            data-design-system-component="Button"
+            style="user-select: none; cursor: pointer;"
+          ><span class="dl-button-label"><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                class="dl-icon dl-icon-xsmall"
+                data-icon-name="regular/chevron-right"
+                data-design-system="oxygen"
+                data-design-system-component="Icon"
+              >
+                <path
+                  d="m6.226 3.169 4.29 4.476c.116.141.187.282.187.422s-.047.258-.141.375L6.273 12.92c-.234.234-.586.234-.797.023-.234-.21-.234-.562-.023-.797l3.89-4.078-3.937-4.125a.56.56 0 0 1 .023-.797c.235-.21.586-.21.797.024Z"
+                ></path>
+              </svg></span></button></li>
+      </ul>
+    </nav>
+  </div>
+</div>
